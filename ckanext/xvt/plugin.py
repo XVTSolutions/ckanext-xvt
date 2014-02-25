@@ -1,4 +1,5 @@
 import ckan.plugins as plugins
+import model
 
 
 class XVTPluginClass(plugins.SingletonPlugin):
@@ -8,3 +9,5 @@ class XVTPluginClass(plugins.SingletonPlugin):
     print '#############################'
     print '#        ckanext-xvt        #'
     print '#############################'
+
+    model.add_record()
